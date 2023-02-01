@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-50">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/fe4561a24f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!--Wrapper-->
+    <div class="flex relative h-screen w-full font-poppins text-[#131C21]" >
+
+        <!--SideNav-->
+        <div class="flex flex-col w-72 px-3 py-11 shadow-2xl justify-between h-screen rounded-md">
+            <div class="text-center">
+                <span class="uppercase font-bold text-xl">admin</span>
+            </div>
+            <div class="h-5/6 flex flex-col justify-between">
+                <ul class="capitalize flex flex-col gap-8 text-gray-600 pl-7">
+                    <li><a href="" class="px-3 py-2 hover:text-emerald-700 hover:pl-5 transition-all"><i class="fa-solid fa-house-user mr-2"></i>Home</a></li>
+                    <li><a href="" class="px-3 py-2 bg-[#131C21] text-white rounded-md"><i class="fa-sharp fa-solid fa-database mr-2"></i>Data<i class="fa-solid fa-chevron-down ml-2"></i></a></li>
+                    <li class="text-sm px-3 pl-7 font-semibold text-emerald-700 "><a href="index.html"><i class="fa-solid fa-circle-dot mr-2"></i>Data Pegawai</a></li>      
+                    <li class="text-sm px-3 pl-7 text-[#131C21] font-semibold hover:text-emerald-700 hover:pl-5 transition-all"><a href="guru.html"><i class="fa-solid fa-circle-dot mr-2"></i>Data Guru</a></li>   
+                    <li class="text-sm px-3 pl-7 text-[#131C21] font-semibold hover:text-emerald-700 hover:pl-5 transition-all"><a href="siswa.html"><i class="fa-solid fa-circle-dot mr-2"></i>Data Siswa</a></li> 
+                    <li><a href="" class="px-3 py-2 hover:text-emerald-700 hover:pl-5 transition-all"><i class="fa-solid fa-chart-line mr-2"></i>Stats</a></li> 
+                    <li><a href=""  class="px-3 py-2 hover:text-emerald-700 hover:pl-5 transition-all"><i class="fa-sharp fa-solid fa-gears mr-2"></i>Settings</a></li>         
+                </ul>
+                <div class="flex justify-around text-center">
+                    <button class="border h-12 w-12 rounded-md hover:bg-[#131C21] hover:text-white transition-all duration-150"><i class="fa-brands fa-twitter"></i></button>
+                    <button class="border h-12 w-12 rounded-md hover:bg-[#131C21] hover:text-white transition-all duration-150"><i class="fa-brands fa-github"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!--Content-->
+        <div class="w-full h-screen flex flex-col">
+            <!--Header-->
+            <div class="flex justify-between w-full px-10 py-11 ">
+                <div class="flex flex-col">
+                    <span class="uppercase font-bold text-xl">Dashboard</span>
+                    <p class="text-sm"><span>Tabel Data</span> / <span class="text-emerald-700">Data Pegawai</span></p>
+                </div>
+                
+                <div class="flex gap-4">
+                    <div class="w-1/2 flex gap-4">
+                    <button class="border h-12 w-12 rounded-md hover:bg-[#131C21] hover:text-white transition-all duration-150"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="border h-12 w-12 rounded-md hover:bg-[#131C21] hover:text-white transition-all duration-150"><i class="fa-solid fa-bell"></i></button>
+                    </div>
+                    <div class="overflow-hidden hover:overflow-visible hover:inline-block w-1/2 h-12">
+                        <button class="border h-12 w-12 text-white bg-[#131C21] rounded-full hover:bg-slate-500">
+                            
+                        </button>
+                        <div class="flex flex-col px-4 py-2 shadow-xl rounded-md -translate-x-4">
+                            <a href="../login.html" class="hover:text-emerald-600 transition">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Main Content-->
+            <div class="rounded-md px-10 py-11 mr-14 gap-10 flex flex-col">
+                <div class="text-2xl">Data Pegawai</div>
+                <div class="border rounded-md overflow-hidden">
+                    <table class="border-collapse w-full text-center">
+                        <thead>
+                            <tr class="text-center">
+                                <td class="p-2 uppercase bg-[#131C21] text-white">Nama Lengkap</td>
+                                <td class="p-2 uppercase bg-[#131C21] text-white">Alamat</td>
+                                <td class="p-2 uppercase bg-[#131C21] text-white">NIK</td>
+                                <td class="p-2 uppercase bg-[#131C21] text-white">Actions</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-2 py-5">Budi</td>
+                                <td class="">Jl. Perjuangan</td>
+                                <td><span class="bg-emerald-100 text-emerald-700 font-bold text-white px-4 rounded-lg">0683287</span></td>
+                                <td><i class="fa-sharp fa-solid fa-pen"></i> | <i class="fa-sharp fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-2 py-5">Budi</td>
+                                <td class="">Jl. Perjuangan</td>
+                                <td><span class="bg-emerald-100 text-emerald-700 font-bold text-white px-4 rounded-lg">0683287</span></td>
+                                <td><i class="fa-sharp fa-solid fa-pen"></i> | <i class="fa-sharp fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-2 py-5">Budi</td>
+                                <td class="">Jl. Perjuangan</td>
+                                <td><span class="bg-emerald-100 text-emerald-700 font-bold text-white px-4 rounded-lg">0683287</span></td>
+                                <td><i class="fa-sharp fa-solid fa-pen"></i> | <i class="fa-sharp fa-solid fa-trash"></i></td>
+                            </tr>
+                            <tr class="hover:bg-gray-100">
+                                <td class="p-2 py-5">Budi</td>
+                                <td class="">Jl. Perjuangan</td>
+                                <td><span class="bg-emerald-100 text-emerald-700 font-bold text-white px-4 rounded-lg">0683287</span></td>
+                                <td><i class="fa-sharp fa-solid fa-pen"></i> | <i class="fa-sharp fa-solid fa-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-full mt-8">
+                    <a href="input.html" class="px-6 py-2 bg-[#131C21] text-white rounded-md"><i class="fa-solid fa-plus mr-2"></i>input data</a>
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+</html>
